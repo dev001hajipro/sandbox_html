@@ -23,7 +23,7 @@ CSS3の疑似クラス、inline要素を追加できます。CSS3では、この
 
 https://developer.mozilla.org/ja/docs/Web/CSS/::after
 
-## Flex
+## Flexible Box Layout Module
 
 ### 入門資料
 - https://www.webcreatorbox.com/tech/flexbox
