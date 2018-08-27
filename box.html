@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 200px;
+            border: 2px dashed #666;
+        }
+
+        .box_inner {
+            width: calc(100% -20px -6px);
+            padding: 10px;
+            background-color: #fff4c3;
+            border: 3px solid #f00;
+        }
+        .box_inner2 {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff00ff;
+            border: 3px solid #0f0;
+            box-sizing: border-box; /* widthにpaddingとborderを含める */
+        }
+    </style>
+</head>
+
+<body>
+    <p><a href="https://nulab-inc.com/ja/blog/nulab/css-basics-for-engineer-boxmodel/">今更聞けない！エンジニアのための CSS の基礎講座 〜ボックスモデル編〜 | ヌーラボ</a>でCSS3のcalc(), box-sizingを実装</p>
+    <p>marginの相殺についての解説も学べます。</p>
+    <div class="box">
+        親要素 .box
+        <div class="box_inner">
+            子供要素 .box_inner
+        </div>
+    </div>
+    <div class="box">
+            親要素 .box
+            <div class="box_inner2">
+                子供要素 .box_inner2
+            </div>
+        </div>
+    </body>
+
+</html>

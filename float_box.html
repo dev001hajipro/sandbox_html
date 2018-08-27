@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #e2c100;
+            margin: 10px auto;
+            border: 1px solid #000000;
+            padding: 5px;
+            width: 700px;
+            height: 100px;
+        }
+
+        main {
+            background-color: #a6ae24;
+            margin: 0 auto;
+            border-bottom: 1px solid #000000;
+            padding: 20px 0;
+            width: 500px;
+            height: 150px;
+        }
+
+        /*
+        https://developer.mozilla.org/ja/docs/Web/CSS/::after
+        CSS3の疑似クラス、inline要素を追加できます。
+        CSS3では、この機能で空のインライン要素を作成し、clear:bothでfloatの回り込みを解除できます。
+        */
+        main::after {
+            content: "xxxxx";
+            display: block;
+            clear: both;
+        }
+
+        footer {
+            background-color: #75c1e3;
+            margin: 30px auto;
+            border: 3px dotted #000000;
+            padding: 20px;
+            width: 650px;
+            height: 50px;
+        }
+
+        #box1 {
+            background-color: #ffff00;
+            width: 250px;
+            height: 120px;
+            float: left;
+        }
+
+        #box2 {
+            background-color: #ffff00;
+            width: 250px;
+            height: 120px;
+            float: left;
+        }
+
+        .box2 {
+            background-color: #a9f5f2;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        http://inomacreate.com/htmlcss_lesson4/
+        上記講座で、CSSでfloatによるボックスレイアウトを学習
+    -->
+    <header>
+        <p>ヘッダー部</p>
+    </header>
+    <main>
+        <p>メイン</p>
+        <div id="box1">
+            <p>汎用ボックス(#box1)</p>
+            <p>id=box1</p>
+        </div>
+        <div id="box2">
+            <p>汎用ボックス(#box2)</p>
+            <p>id=box2</p>
+        </div>
+        <div class="box2">
+            <p>汎用ボックス(.box2)</p>
+            <p>class="box2"</p>
+        </div>
+    </main>
+    <footer>
+        <p>フッター</p>
+        <div class="box2">
+            <p>汎用ボックス(.box2)</p>
+            <p>class="box2"</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
