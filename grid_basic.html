@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper {
+            border: 5px solid #f76707;
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            /* 行の長さ */
+            /* grid-auto-rows: 200px;*/
+            grid-auto-rows: minmax(100px, auto);
+        }
+        .wrapper > div {
+            border: 1px solid #847eb8;
+            background-color:azure;
+            padding: 10px;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+        基本的なGridを学ぶ
+    -->
+    <p>fr単位:(分数 afraction)</p>
+    <div class="wrapper">
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae aliquid fugit necessitatibus dicta asperiores minima, ad sed aspernatur iusto accusantium tempore mollitia doloribus ratione. Repellendus quibusdam quisquam eos iure vitae. Temporibus iusto quisquam laborum, natus laudantium libero obcaecati, voluptatum veniam totam sint recusandae commodi sapiente ab aut possimus voluptatem qui.</div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, reprehenderit.</div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis cum tenetur magni vitae soluta, blanditiis vel fugiat dignissimos consequatur accusantium.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, veniam. Explicabo voluptas, voluptatem ipsam ea maiores architecto enim molestias quas in, nostrum sapiente, rerum esse iure odio facere ut iste expedita quidem vel quisquam praesentium magnam sint. Aliquid nesciunt dignissimos sequi blanditiis, est vitae vel ratione quam? In consequatur est voluptas dolor aliquam tempore, rem hic repellat? Asperiores, voluptatem veritatis quam rerum sunt recusandae id. Nostrum quaerat nisi vel amet cupiditate, accusamus perspiciatis eveniet provident omnis autem vero cumque sunt in quam animi deserunt fugiat quasi ipsa quisquam debitis. Quod, incidunt hic commodi excepturi exercitationem laboriosam facere eos laudantium deleniti.</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </div>
+</body>
+</html>
